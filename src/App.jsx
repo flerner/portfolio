@@ -10,7 +10,7 @@ function App() {
     <div className='flex'>
       <div className='hidden md:block'><NavBar className="" /></div>
 
-      <div className='flex flex-1 h-screen m-auto md:ml-80  transition-all duration-300 ease-in-out border border-black bg-gradient-to-r from-zinc-950 to-gray-950'>
+      <div className='flex flex-1 h-screen m-auto md:ml-80 justify-center items-center md:justify-start transition-all duration-300 ease-in-out border border-black bg-gradient-to-r from-zinc-950 to-gray-950'>
         <Section />
       </div>
 
