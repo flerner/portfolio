@@ -4,6 +4,7 @@ export default {
     "./src/App.jsx",
     "./src/components/NavBar.jsx",
     "./src/components/Section.jsx",
+    "./src/components/MobileNavBar.jsx",
   ],
   theme: {
     extend: {},
