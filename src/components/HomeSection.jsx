@@ -4,7 +4,7 @@ import { FaLinkedinIn } from "react-icons/fa";
 import { SiGmail } from "react-icons/si";
 import { IoMdDownload } from "react-icons/io";
 
-function Section() {
+function HomeSection() {
     return (
         <div className="flex flex-col  md:ml-24 text-white ">
 
@@ -24,4 +24,4 @@ function Section() {
 
     )
 }
-export default Section
+export default HomeSection
