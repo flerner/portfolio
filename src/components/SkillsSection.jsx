@@ -44,10 +44,10 @@ function SkillsSection() {
     const learningSkills = []
 
     return (
-        <div className="flex flex-col items-center gap-16">
+        <div className="flex flex-col justify-center gap-16 h-screen mx-24">
             <h1 className="text-white text-4xl">My skills</h1>
-            <div className="flex h-full w-full justify-center items-center md:justify-start md:transition duration-200">
-                <div className="flex flex-col items-center md:grid md:grid-cols-2 gap-4">
+            <div className="flex  justify-center items-center md:justify-start ">
+                <div className="flex flex-col items-center md:grid md:grid-cols-2 gap-4 transition duration-200">
                     <SkillsGroup icons={frontendSkills} title="Frontend" />
                     <SkillsGroup icons={frontendSkills} title="Backend" />
                     <SkillsGroup icons={frontendSkills} title="Learning" />
