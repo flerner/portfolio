@@ -38,7 +38,7 @@ function App() {
       {/* Mobile menu */}
       <MobileNavBar />
 
-      <div className='flex flex-1 px-4 h-full md:h-screen m-auto md:ml-80 justify-center items-center md:justify-start transition-all duration-300 ease-in-out border border-black bg-gradient-to-r from-zinc-950 to-gray-900'>
+      <div className='flex flex-1 px-4 h-full md:m-0 md:h-screen m-auto md:ml-80 justify-center items-center md:justify-start transition-all duration-300 ease-in-out border border-black bg-gradient-to-r from-zinc-950 to-gray-900'>
         {section}
 
       </div>

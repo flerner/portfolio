@@ -6,7 +6,7 @@ import { IoMdDownload } from "react-icons/io";
 
 function HomeSection() {
     return (
-        <div className="flex flex-col  md:ml-24 text-white ">
+        <div className="flex flex-col h-screen justify-center md:ml-24 text-white ">
 
             <h1 className="text-5xl md:mt-48 ">Hello! I'm Felix Lerner</h1>
             <p className="my-8 max-w-96 ml-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vehicula iaculis volutpat. Quisque fringilla risus ligula, sit amet facilisis nisi pellentesque id ...</p>
