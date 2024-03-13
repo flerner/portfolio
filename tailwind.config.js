@@ -9,6 +9,7 @@ export default {
     "./src/components/SkillsSection.jsx",
     "./src/components/WorkExperienceSection.jsx",
     "./src/components/SkillsGroup.jsx",
+    "./src/components/WorkExperienceArticle",
   ],
   theme: {
     extend: {},

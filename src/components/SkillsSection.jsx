@@ -42,16 +42,17 @@ function SkillsSection() {
     ]
     const backendSkills = []
     const learningSkills = []
-
+    const bgToR = "bg-gradient-to-r from-black to-transparent"
+    const bgToL = "bg-gradient-to-l from-black to-transparent"
     return (
-        <div className="flex flex-col items-center gap-16">
+        <div className="flex flex-col items-center gap-16 md:ml-24">
             <h1 className="text-white text-4xl">My skills</h1>
             <div className="flex h-full w-full justify-center items-center md:justify-start md:transition duration-200">
                 <div className="flex flex-col items-center md:grid md:grid-cols-2 gap-4">
-                    <SkillsGroup icons={frontendSkills} title="Frontend" />
-                    <SkillsGroup icons={frontendSkills} title="Backend" />
-                    <SkillsGroup icons={frontendSkills} title="Learning" />
-                    <SkillsGroup icons={frontendSkills} title="Tools" />
+                    <SkillsGroup icons={frontendSkills} title="Frontend" bgStyle={bgToR} />
+                    <SkillsGroup icons={frontendSkills} title="Backend" bgStyle={bgToL} />
+                    <SkillsGroup icons={frontendSkills} title="Learning" bgStyle={bgToR} />
+                    <SkillsGroup icons={frontendSkills} title="Tools" bgStyle={bgToL} />
                 </div>
             </div>
         </div>

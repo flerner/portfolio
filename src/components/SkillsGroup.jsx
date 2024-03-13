@@ -1,6 +1,6 @@
-function SkillsGroup({ icons, title }) {
+function SkillsGroup({ icons, title, bgStyle }) {
     return (
-        <div className="bg-gradient-to-r from-black to-transparent rounded-md min-w-40 min-h-32">
+        <div className={`${bgStyle} rounded-md min-w-40 min-h-32`}>
             <h1 className="text-white flex justify-center p-4 text-3xl">
                 {title}
             </h1>
