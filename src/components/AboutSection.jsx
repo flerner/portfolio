@@ -1,6 +1,10 @@
+import BGImage from "../assets/images/background.jpg"
+
 function AboutSection() {
     return (
-        <h1 className="text-white">About Section</h1>
+        <div className="bg-auto" style={{ backgroundSize: "cover", backgroundImage: `url(${BGImage})`, }} >
+            hola
+        </div>
     )
 }
 export default AboutSection
