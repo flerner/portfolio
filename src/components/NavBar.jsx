@@ -14,7 +14,7 @@ function NavBar({ onSelectOption }) {
                         <h3 className="text-white">React || Node || Mongo</h3>
                     </div>
                     <button onClick={() => handleClick(NavOptions.HomeSection)} className=" text-white hover:border hover:border-white focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">Home</button>
-                    <button onClick={() => handleClick(NavOptions.AboutSection)} className=" text-white hover:border hover:border-white focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">About</button>
+                    <button onClick={() => handleClick(NavOptions.ProjectsSection)} className=" text-white hover:border hover:border-white focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">About</button>
                     <button onClick={() => handleClick(NavOptions.SkillsSection)} className=" text-white hover:border hover:border-white focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">Skills</button>
                     <button onClick={() => handleClick(NavOptions.WorkExperienceSection)} className=" text-white hover:border hover:border-white focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">Work Experience</button>
                 </aside>

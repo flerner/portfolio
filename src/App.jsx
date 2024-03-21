@@ -5,7 +5,7 @@ import MobileNavBar from './components/MobileNavBar'
 import NavBar from './components/NavBar'
 import HomeSection from './components/HomeSection'
 import NavOptions from "./NavOptions.js"
-import AboutSection from "./components/AboutSection.jsx"
+import ProjectsSection from "./components/ProjectsSection.jsx"
 import SkillsSection from "./components/SkillsSection.jsx"
 import WorkExperienceSection from "./components/WorkExperienceSection.jsx"
 function App() {
@@ -16,8 +16,8 @@ function App() {
     case NavOptions.HomeSection:
       section = <HomeSection />
       break
-    case NavOptions.AboutSection:
-      section = <AboutSection />
+    case NavOptions.ProjectsSection:
+      section = <ProjectsSection />
       break
     case NavOptions.SkillsSection:
       section = <SkillsSection />
