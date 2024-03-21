@@ -5,6 +5,15 @@ import { FaCss3Alt } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io5";
 import { IconContext } from "react-icons";
 import { SiTailwindcss } from "react-icons/si";
+import { FaNode } from "react-icons/fa6";
+import { DiMongodb } from "react-icons/di";
+import { SiExpress } from "react-icons/si";
+import { FaGolang } from "react-icons/fa6";
+import { FaUnity } from "react-icons/fa";
+import { SiTypescript } from "react-icons/si";
+import { FaUbuntu } from "react-icons/fa";
+
+
 
 function SkillsSection() {
     const frontendSkills = [
@@ -40,8 +49,59 @@ function SkillsSection() {
             </div>
         </IconContext.Provider>,
     ]
-    const backendSkills = []
-    const learningSkills = []
+    const backendSkills = [
+        <IconContext.Provider value={{ size: "50px", color: "#72a864" }}>
+            <div className="flex flex-col items-center text-white 50px md: 70px ">
+                <FaNode />
+                <p>Node</p>
+            </div>
+
+        </IconContext.Provider>,
+        <IconContext.Provider value={{ size: "50px", color: "#199555" }}>
+            <div className="flex flex-col items-center text-white 50px md: 70px ">
+                <DiMongodb />
+                <p>MongoDB</p>
+            </div>
+
+        </IconContext.Provider>,
+        <IconContext.Provider value={{ size: "50px", color: "#fff" }}>
+            <div className="flex flex-col items-center text-white 50px md: 70px ">
+                <SiExpress />
+                <p>ExpressJS</p>
+            </div>
+
+        </IconContext.Provider>,
+    ]
+    const learningSkills = [
+        <IconContext.Provider value={{ size: "50px", color: "#007d9c" }}>
+            <div className="flex flex-col items-center text-white 50px md: 70px ">
+                <FaGolang />
+                <p>Golang</p>
+            </div>
+
+        </IconContext.Provider>,
+        <IconContext.Provider value={{ size: "50px", color: "#2f74c0" }}>
+            <div className="flex flex-col items-center text-white 50px md: 70px ">
+                <SiTypescript />
+                <p>Typescript</p>
+            </div>
+
+        </IconContext.Provider>,
+        <IconContext.Provider value={{ size: "50px", color: "#525252" }}>
+            <div className="flex flex-col items-center text-white 50px md: 70px ">
+                <FaUnity />
+                <p>Unity</p>
+            </div>
+
+        </IconContext.Provider>,
+        <IconContext.Provider value={{ size: "50px", color: "#fb4a05" }}>
+            <div className="flex flex-col items-center text-white 50px md: 70px ">
+                <FaUbuntu />
+                <p>Ubuntu</p>
+            </div>
+
+        </IconContext.Provider>,
+    ]
 
     return (
         <div className="flex flex-col justify-center gap-16 md:h-screen mx-6 md:mx-8 xl:mx-24 h-full">
@@ -49,8 +109,8 @@ function SkillsSection() {
             <div className="flex  justify-center items-center md:justify-start ">
                 <div className="flex flex-col items-center md:grid md:grid-cols-2 gap-4">
                     <SkillsGroup icons={frontendSkills} title="Frontend" />
-                    <SkillsGroup icons={frontendSkills} title="Backend" />
-                    <SkillsGroup icons={frontendSkills} title="Learning" />
+                    <SkillsGroup icons={backendSkills} title="Backend" />
+                    <SkillsGroup icons={learningSkills} title="Learning" />
                     <SkillsGroup icons={frontendSkills} title="Tools" />
                 </div>
             </div>
