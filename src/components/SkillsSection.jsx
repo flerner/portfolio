@@ -12,6 +12,11 @@ import { FaGolang } from "react-icons/fa6";
 import { FaUnity } from "react-icons/fa";
 import { SiTypescript } from "react-icons/si";
 import { FaUbuntu } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
+import { TbBrandVscode } from "react-icons/tb";
+import { FaGitAlt } from "react-icons/fa";
+import { FaNpm } from "react-icons/fa";
+import { IoLogoFirebase } from "react-icons/io5";
 
 
 
@@ -71,6 +76,13 @@ function SkillsSection() {
             </div>
 
         </IconContext.Provider>,
+        <IconContext.Provider value={{ size: "50px", color: "#f8a721" }}>
+            <div className="flex flex-col items-center text-white 50px md: 70px ">
+                <IoLogoFirebase />
+                <p>Firebase</p>
+            </div>
+
+        </IconContext.Provider>,
     ]
     const learningSkills = [
         <IconContext.Provider value={{ size: "50px", color: "#007d9c" }}>
@@ -102,6 +114,36 @@ function SkillsSection() {
 
         </IconContext.Provider>,
     ]
+    const tools = [
+        <IconContext.Provider value={{ size: "50px", color: "#fff" }}>
+            <div className="flex flex-col items-center text-white 50px md: 70px ">
+                <FaGithub />
+                <p>Github</p>
+            </div>
+
+        </IconContext.Provider>,
+        <IconContext.Provider value={{ size: "50px", color: "#007acc" }}>
+            <div className="flex flex-col items-center text-white 50px md: 70px ">
+                <TbBrandVscode />
+                <p>VsCode</p>
+            </div>
+
+        </IconContext.Provider>,
+        <IconContext.Provider value={{ size: "50px", color: "#f05639" }}>
+            <div className="flex flex-col items-center text-white 50px md: 70px ">
+                <FaGitAlt />
+                <p>Github</p>
+            </div>
+
+        </IconContext.Provider>,
+        <IconContext.Provider value={{ size: "50px", color: "#cd3e3d" }}>
+            <div className="flex flex-col items-center text-white 50px md: 70px ">
+                <FaNpm />
+                <p>Github</p>
+            </div>
+
+        </IconContext.Provider>,
+    ]
 
     return (
         <div className="flex flex-col justify-center gap-16 md:h-screen mx-6 md:mx-8 xl:mx-24 h-full">
@@ -111,7 +153,7 @@ function SkillsSection() {
                     <SkillsGroup icons={frontendSkills} title="Frontend" />
                     <SkillsGroup icons={backendSkills} title="Backend" />
                     <SkillsGroup icons={learningSkills} title="Learning" />
-                    <SkillsGroup icons={frontendSkills} title="Tools" />
+                    <SkillsGroup icons={tools} title="Tools" />
                 </div>
             </div>
         </div>
