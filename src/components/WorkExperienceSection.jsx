@@ -1,6 +1,11 @@
+import WorkExperienceArticle from "./WorkExperienceArticle"
 function WorkExperienceSection() {
     return (
-        <h1 className="text-white">Work Experience Section</h1>
+        <div className="flex flex-col h-screen justify-center gap-8">
+            <WorkExperienceArticle />
+            <WorkExperienceArticle />
+        </div>
+
     )
 }
 export default WorkExperienceSection

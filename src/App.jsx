@@ -5,7 +5,7 @@ import MobileNavBar from './components/MobileNavBar'
 import NavBar from './components/NavBar'
 import HomeSection from './components/HomeSection'
 import NavOptions from "./NavOptions.js"
-import AboutSection from "./components/AboutSection.jsx"
+import ProjectsSection from "./components/ProjectsSection.jsx"
 import SkillsSection from "./components/SkillsSection.jsx"
 import WorkExperienceSection from "./components/WorkExperienceSection.jsx"
 function App() {
@@ -16,8 +16,8 @@ function App() {
     case NavOptions.HomeSection:
       section = <HomeSection />
       break
-    case NavOptions.AboutSection:
-      section = <AboutSection />
+    case NavOptions.ProjectsSection:
+      section = <ProjectsSection />
       break
     case NavOptions.SkillsSection:
       section = <SkillsSection />
@@ -38,7 +38,7 @@ function App() {
       {/* Mobile menu */}
       <MobileNavBar />
 
-      <div className='flex flex-1 px-4 h-full md:m-0 md:h-screen m-auto md:ml-80 justify-center items-center md:justify-start transition-all duration-300 ease-in-out border border-black bg-gradient-to-r from-zinc-950 to-gray-900'>
+      <div className='flex flex-1  h-full md:m-0  m-auto md:ml-64 lg:ml-80 transition-all duration-300 justify-center items-center md:justify-start ease-in-out border border-black bg-gradient-to-r from-zinc-950 to-gray-900'>
         {section}
 
       </div>
