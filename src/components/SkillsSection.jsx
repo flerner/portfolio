@@ -9,7 +9,7 @@ import { SiTailwindcss } from "react-icons/si";
 function SkillsSection() {
     const frontendSkills = [
         <IconContext.Provider value={{ size: "50px", color: "#4198a9" }}>
-            <div className="flex flex-col items-center text-white">
+            <div className="flex flex-col items-center text-white 50px md: 70px ">
                 <FaReact />
                 <p>React</p>
             </div>
@@ -44,10 +44,10 @@ function SkillsSection() {
     const learningSkills = []
 
     return (
-        <div className="flex flex-col justify-center gap-16 h-screen mx-24">
+        <div className="flex flex-col justify-center gap-16 md:h-screen mx-6 md:mx-8 xl:mx-24 h-full">
             <h1 className="text-white text-4xl">My skills</h1>
             <div className="flex  justify-center items-center md:justify-start ">
-                <div className="flex flex-col items-center md:grid md:grid-cols-2 gap-4 transition duration-200">
+                <div className="flex flex-col items-center md:grid md:grid-cols-2 gap-4">
                     <SkillsGroup icons={frontendSkills} title="Frontend" />
                     <SkillsGroup icons={frontendSkills} title="Backend" />
                     <SkillsGroup icons={frontendSkills} title="Learning" />
