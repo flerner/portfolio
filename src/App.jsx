@@ -36,7 +36,7 @@ function App() {
       <div className='hidden md:block'><NavBar onSelectOption={handleOptionSelect} /></div>
 
       {/* Mobile menu */}
-      <MobileNavBar />
+      <MobileNavBar onSelectOption={handleOptionSelect} />
 
       <div className='flex flex-1  h-full md:m-0  m-auto md:ml-64 lg:ml-80 transition-all duration-300 justify-center items-center md:justify-start ease-in-out border border-black bg-gradient-to-r from-zinc-950 to-gray-900'>
         {section}

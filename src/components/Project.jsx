@@ -1,9 +1,10 @@
 import NetflixImage from "../assets/images/netflix-clone.jpg"
+
 import { FaGithub } from "react-icons/fa";
 function Project({ title, githubLink, link, image, description }) {
     return (
         <div className="max-w-sm bg-slate-900 border border-[#d9ff54] rounded-lg shadow ">
-            <h1 className="text-center text-red-900 text-lg p-3">{title}</h1>
+            <h1 className="text-center text-white text-lg p-3">{title}</h1>
             <a href="#">
                 <img className="rounded-t-lg" src={image} alt="Netflix Clone" />
             </a>
