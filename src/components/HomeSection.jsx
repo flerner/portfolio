@@ -28,7 +28,7 @@ function HomeSection() {
 
 
             </div>
-            <div className="hidden md:flex flex-col m-36 relative">
+            <div className="hidden md:flex flex-col  relative">
                 <div className="absolute top-0 left-0 w-full h-full bg-auto min-w-96 min-h-56 rounded-3xl m-32" style={{ backgroundSize: "cover", backgroundImage: `url(${BGImage})`, zIndex: 1 }} />
                 <div className="absolute top-0 left-0 w-full h-full bg-auto min-w-96 min-h-56 rounded-3xl" style={{ backgroundSize: "cover", backgroundImage: `url(${BGImage})`, zIndex: 0 }} />
             </div>
