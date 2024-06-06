@@ -33,7 +33,9 @@ function App() {
   }
   return (
     <div className='flex'>
-      <div className='hidden md:block'><NavBar onSelectOption={handleOptionSelect} /></div>
+      <div className='hidden md:block'>
+        <NavBar onSelectOption={handleOptionSelect} />
+      </div>
 
       {/* Mobile menu */}
       <MobileNavBar onSelectOption={handleOptionSelect} />
