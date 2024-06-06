@@ -17,6 +17,8 @@ import { TbBrandVscode } from "react-icons/tb";
 import { FaGitAlt } from "react-icons/fa";
 import { FaNpm } from "react-icons/fa";
 import { IoLogoFirebase } from "react-icons/io5";
+import { SiNextdotjs } from "react-icons/si";
+import { SiPrisma } from "react-icons/si";
 
 
 
@@ -106,6 +108,15 @@ function SkillsSection() {
             </div>
 
         </IconContext.Provider>,
+        <IconContext.Provider value={{ size: "50px" }}>
+            <div className="flex flex-col items-center text-white  50px md: 70px ">
+
+                <SiPrisma />
+                <p>Prisma</p>
+
+            </div>
+
+        </IconContext.Provider>,
         <IconContext.Provider value={{ size: "50px", color: "#fb4a05" }}>
             <div className="flex flex-col items-center text-white 50px md: 70px ">
                 <FaUbuntu />
@@ -113,6 +124,17 @@ function SkillsSection() {
             </div>
 
         </IconContext.Provider>,
+        <IconContext.Provider value={{ size: "50px", }}>
+            <div className="flex flex-col items-center text-white  50px md: 70px ">
+
+                <SiNextdotjs />
+                <p>Nextjs</p>
+
+            </div>
+
+        </IconContext.Provider>,
+
+
     ]
     const tools = [
         <IconContext.Provider value={{ size: "50px", color: "#fff" }}>
